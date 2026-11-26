@@ -6,21 +6,21 @@
 class Vaquero < Formula
   desc "Local-first ticket tracker with coordination for agents"
   homepage "https://github.com/stazelabs/vaquero"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.3/vaquero_0.1.3_darwin_amd64.tar.gz"
-      sha256 "536268f49bc6e139a0697729b40e271d2d75cc569080c0abaf3e44c364f949a8"
+      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.4/vaquero_0.1.4_darwin_amd64.tar.gz"
+      sha256 "cdf7c6e5496323c482b380b955c1c5e84bfc38e8a032f9031bc563166070cec7"
 
       define_method(:install) do
         bin.install "vaquero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.3/vaquero_0.1.3_darwin_arm64.tar.gz"
-      sha256 "7930be3ed8a32461ba2ea83ff82790206f95029947295e10c3c25cde317d9f3f"
+      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.4/vaquero_0.1.4_darwin_arm64.tar.gz"
+      sha256 "58549d377ef89ee6f67191c91ecf8449d519ea80eb5c67b1eb2305f06caccad1"
 
       define_method(:install) do
         bin.install "vaquero"
@@ -30,15 +30,15 @@ class Vaquero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.3/vaquero_0.1.3_linux_amd64.tar.gz"
-      sha256 "7d52d71421d2fd08505f9a308ccfb216f913a795cc4d88b0b6aef8994d228c9f"
+      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.4/vaquero_0.1.4_linux_amd64.tar.gz"
+      sha256 "cc1c3d912ae0aad1badb00cae30101c2da58a72a461b72ec72eaf892acc578aa"
       define_method(:install) do
         bin.install "vaquero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.3/vaquero_0.1.3_linux_arm64.tar.gz"
-      sha256 "c45e4c95118f487f01edd5ea8da41c0a723298f5c4fe8398285a453a5d423760"
+      url "https://github.com/stazelabs/vaquero/releases/download/v0.1.4/vaquero_0.1.4_linux_arm64.tar.gz"
+      sha256 "cf01cd28f4921571377fb856dfe12d2526ffc119f48b3f838f7e3ce6a83ec71e"
       define_method(:install) do
         bin.install "vaquero"
       end
